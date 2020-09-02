@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Quiz Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <header id="page-header" class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Welcome to our quiz!</h1>
+                <p class="lead">Test your general knowledge</p>
+            </div>
+        </header>
+        <div id="intro" class="container question-card">
+          <div class="column">
+            <h3>Instructions</h3>
+            <p>Please select the correct answer to each question and click the button 'Next question' when ready.<br>Click 'Start' to begin the quiz.</p>
+            <button type="submit" class="btn btn-primary" onclick="startQuiz()">Start</button>
+          </div>
+        </div>
+        <div id="question-card-1" class="container question-card">
+          <div class="column">
+            <div class="col-sm">
+              <h3 id="question" class="question">Question - 1</h3>
+              <h4>Who out of these celebrities turned 50 this year?</h4>
+              <div class="form-group">
+                <div class="choice"><input type="radio" name="question1" id="choice-1-a" class="choice" value="1" required>Christopher Nolan</input></div>
+                <div class="choice"><input type="radio" name="question1" id="choice-1-b" class="choice" value="0" required>Hugh Jackman</input></div>
+                <div class="choice"><input type="radio" name="question1" id="choice-1-c" class="choice" value="0" required>Will Smith</input></div>
+                <button type="submit" class="btn btn-primary" onclick="nextQuestion1()">Next question</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div id="question-card-2" class="container question-card">
+          <div class="column">
+            <div class="col-sm">
+              <h3 id="question" class="question">Question - 2</h3>
+              <h4>What movie is this quote from? "Even the smallest person can change the course of the future"</h4>
+              <div class="form-group">
+                <div class="choice"><input type="radio" name="question2" id="choice-2-a" class="choice" value="0">Finding Nemo</input></div>
+                <div class="choice"><input type="radio" name="question2" id="choice-2-b" class="choice" value="1">The lord of the rings</input></div>
+                <div class="choice"><input type="radio" name="question2" id="choice-2-c" class="choice" value="0">Stuart Little</input></div>
+                <button type="submit" class="btn btn-primary" onclick="nextQuestion2()">Next question</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div id="question-card-3" class="container question-card">
+          <div class="column">
+            <div class="col-sm">
+              <h3 id="question" class="question">Question - 3</h3>
+              <h4>Spain borders with how many countries?</h4>
+              <div class="form-group">
+                <div class="choice"><input type="radio" name="question3" id="choice-3-a" class="choice" value="0">Three</input></div>
+                <div class="choice"><input type="radio" name="question3" id="choice-3-b" class="choice" value="0">Two</input></div>
+                <div class="choice"><input type="radio" name="question3" id="choice-3-c" class="choice" value="1">Five</input></div>
+                <button type="submit" class="btn btn-primary" onclick="nextQuestion3()">Next question</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="question-card-4" class="container question-card">
+          <div class="column">
+            <div class="col-sm">
+              <h3 id="question" class="question">Question - 4</h3>
+              <h4>What is the british public favourite Bond film?</h4>
+              <div class="form-group">
+                <div class="choice"><input type="radio" name="question4" id="choice-4-a" class="choice" value="0">Tomorrow Never Dies</input></div>
+                <div class="choice"><input type="radio" name="question4" id="choice-4-b" class="choice" value="0">Dr. No</input></div>
+                <div class="choice"><input type="radio" name="question4" id="choice-4-c" class="choice" value="1">Casino Royale</input></div>
+                <button type="submit" class="btn btn-primary" onclick="nextQuestion4()">Next question</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="question-card-5" class="container question-card">
+          <div class="column">
+            <div class="col-sm">
+              <h3 id="question" class="question">Question - 5</h3>
+              <h4>What is the total length of the Great Wall of China?</h4>
+              <div class="form-group">
+                <div class="choice"><input type="radio" iname="question5" d="choice-5-a" class="choice" value="1">21,196km or 13,171mi</input></div>
+                <div class="choice"><input type="radio" name="question5" id="choice-5-b" class="choice" value="0">14,228km or 8,841mi</input></div>
+                <div class="choice"><input type="radio" name="question5" id="choice-5-c" class="choice" value="0">4,692km or 2,915mi</input></div>
+                <button type="submit" class="btn btn-primary" onclick="nextQuestion5()">Next question</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="results-card" class="container results-card">
+          <div class="column">
+            <div class="col-sm">
+              <h3 id="question" class="question">Your results</h3>
+              <h4>Your score is <span id="total"></span>/5.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+#page-header {
+  background: #f19e03;
+  color: white;
+  align-items: baseline;
+  padding: 1em;
+}
+
+.question-card {
+  background: #f3f3f3;
+  padding: 1em;
+}
+
+.results-card {
+  background: #f3f3f3;
+  padding: 1em;
+  display: none;
+}
+
+#question-card-1 {
+  display: none;
+}
+
+#question-card-2 {
+  display: none;
+}
+
+#question-card-3 {
+  display: none;
+}
+
+#question-card-4 {
+  display: none;
+}
+
+#question-card-5 {
+  display: none;
+}
+
+.choice {
+  margin: 0.7em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b8b8b8;
+}
+
+.choice:hover {
+  background: orange;
+}
